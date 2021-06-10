@@ -131,6 +131,9 @@ h1 {
             margin: 10px;
             width: auto;
         }
+        #content {
+            width: auto;
+        }
         .copyright {
             display: block;
         }
