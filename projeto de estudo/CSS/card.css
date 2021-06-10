@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+body {
+    background-color: #e7e7e7;
+}
+
+body, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+    /* MENU */
+
+#header {
+    background-color: #b4b4b4;
+}
+
+a {
+    text-decoration: none;
+    color: #252A30;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu a:hover {
+    color: #ffffff;
+    background-color: #252A30;
+    transition: 1s;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 1rem;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: .3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#menu a {
+    display: block;
+    padding: 1rem;
+}
+
+    /* CONTEUDO */
+
+#cardapio {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #252A30;
+    border: 1px solid #252A30;
+    box-shadow: 3px 3px 3px #252A30;
+    color: #F5E82F;
+    text-align: center;
+    width: 900px;
+    font-family: 'Fugaz One', Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #F5E82F;
+}
+
+.lanches {
+    background-image: url(../imagens/lanche-edited.jpg);
+    text-align: justify;
+    color: white;
+}
+
+.porcoes {
+    background-image: url(../imagens/batata-edited.jpg);
+    text-align: justify;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #252a30bb;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+    /* FOOTER */
+
+    .footer {
+        text-align: center;
+        height: 90px;
+        background-color: #b4b4b4;
+    }
+    
+    .facebook a:hover {
+        color: #1877F2;
+        transition: .5s;
+    }
+    
+    .twitter a:hover {
+        color: #1DA1F2;
+        transition: .5s;
+    }
+    
+    .instagram a:hover {
+        color: #914BC7;
+        transition: .5s;
+    }
+    
+    #social ul {
+        padding: 15px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        border-bottom: 1px solid #252A30;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .copyright {
+        font-size: 1rem;
+        border: none;
+        width: 400px;
+    }
+
+@media (max-width: 918px) {
+
+    /* CONTEUDO */
+
+    #cardapio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #252A30;
+        width: auto;
+        text-align: center;
+    }
+    .lanches{
+        background-image: none;
+    }
+    .porcoes {
+        background-image: none;
+    }
+
+    /* FOOTER */
+
+    #social ul {
+        gap: 5rem;
+    }
+    span {
+        display: none;
+    }
+    .copyright {
+        display: block;
+    }
+}
+
+@media (max-width: 656px) {
+
+    /* HEADER */
+
+    #logo a {
+        background-color: transparent;
+    }
+    #nav {
+        display: block;
+        text-align: center;
+        height: 150px;
+    }
+    #menu {
+        gap: .1rem;
+        display: flex;
+        justify-content: center;
+    }
+    #menu a {
+        padding: .9rem;
+    }
+
+    /* CONTEUDO */
+
+    #cardapio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #252A30;
+        width: auto;
+        text-align: center;
+    }
+    .lanches{
+        background-image: none;
+    }
+    .porcoes {
+        background-image: none;
+    }
+
+    /* FOOTER */
+
+    #social ul {
+        gap: 5rem;
+    }
+    span {
+        display: none;
+    }
+    .copyright {
+        display: block;
+    }
+}
